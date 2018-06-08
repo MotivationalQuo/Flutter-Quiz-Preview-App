@@ -43,7 +43,7 @@ class CorrectWrongOverlayState extends State<CorrectWrongOverlay> with SingleTic
           children: <Widget>[
             new Container(
               decoration: new BoxDecoration(
-                color: Colors.white,
+                color: widget._isCorrect==true ? Colors.greenAccent : Colors.redAccent,
                 shape: BoxShape.circle
               ),
               child: new Transform.rotate(
